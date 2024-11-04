@@ -1,0 +1,56 @@
+/* Psuedo Class */
+.link{
+    color: aqua;
+}
+.link:active{
+    color: blueviolet;
+}
+.link:visited{
+    color: black;
+}
+.link:hover{
+    color: blue;
+}
+/* .list_item{
+    color: brown;
+    list-style-type: none;
+    font-size: 18px;
+}
+.list_item:first-child{
+    color: aqua;
+} */
+.list_item:nth-child(odd){
+    color: black;
+}
+.list.item:nth-child(even){
+    color: brown;
+}
+.list.item:nth-child(2){
+    color: blue;
+}
+.list.item:nth-child(2n-1){
+color: chartreuse;
+}
+/*Pseudo Element*/
+.list_item::first-letter{
+    color: blue;
+    font-size: 44px;
+}
+p::first-letter{
+    color: blue;
+    font-size: 44px;
+}
+.text::first-line{
+    color: blue;
+    font-size: 44px;
+}
+.text::after{
+    content: "Merhaba Ben Sona Eklendim";
+    color: burlywood;
+    font-size: 24px;
+}
+.text::before{
+    content: "Merhaba Ben Başa Eklendim";
+    color: burlywood;
+    font-size: 24px;
+}
